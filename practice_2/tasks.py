@@ -28,7 +28,7 @@ def calculate_total_years_of_experience(employee_list):
 calculate_total_years_of_experience(employees)
 
 
-# 3. Some people don't have an email address - collect their details into a new list!
+# 3. Some people don't have an email address - collect their details into a new list
 def find_employees_without_email(employee_list):
   employees_without_email = []
 
