@@ -9,7 +9,8 @@ with open("bestsellers_with_categories.csv", "r", encoding="utf-8") as csvfile:
     reader = csv.reader(csvfile, skipinitialspace=True)
     next(reader) # skips first row
     for row in reader:
-        new_book = Book(row[0], row[1], row[2], row[3], row[4], row[5], row[6])
+        # new_book = Book(row[0], row[1], row[2], row[3], row[4], row[5], row[6])
+        new_book = Book(*row) # unpack elements of 'row' iterable
         books.append(new_book)
 
-print(books[0].name)
+print(books[0])
