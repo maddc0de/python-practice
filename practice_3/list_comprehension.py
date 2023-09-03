@@ -10,4 +10,6 @@ with open("bestsellers_with_categories.csv", "r", encoding="utf-8") as csvfile:
     # list comprehension
     books = [Book(*row) for row in reader]
 
-print(books)
+# create a list with all of the bestsellers from 2009 to 2012
+filtered_bestsellers = [book for book in books if 2009 <= int(book.year) <= 2012]
+print(f"bestsellers from 2009 to 2012 are: {filtered_bestsellers}")
