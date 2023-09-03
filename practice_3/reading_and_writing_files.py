@@ -27,3 +27,14 @@ for book in books:
       filtered_bestsellers.append(book)
 
 print(f"bestsellers from 2009 to 2012 are: {filtered_bestsellers}")
+
+
+# how expensive is the most expensive book
+most_expensive_book = books[0]
+
+for book in books:
+    if (int(book.price) > int(most_expensive_book.price)):
+      most_expensive_book = book
+
+print(f"most expensive book is '{most_expensive_book.name}' with the price of £ {most_expensive_book.price}")
+
