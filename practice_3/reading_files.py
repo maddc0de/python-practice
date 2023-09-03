@@ -33,7 +33,7 @@ for book in books:
     if (int(book.price) > int(most_expensive_book.price)):
       most_expensive_book = book
 
-print(f"most expensive book is '{most_expensive_book.name}' with the price of £ {most_expensive_book.price}")
+print(f"most expensive book is '{most_expensive_book.name}' with the price of $ {most_expensive_book.price}")
 
 
 # create a list with all books whose author has the first name George
