@@ -19,11 +19,8 @@ print(books[0])
 # create a list with all of the bestsellers from 2009 to 2012
 filtered_bestsellers = []
 
-start_year = 2009
-end_year = 2012
-
 for book in books:
-    if (start_year <= int(book.year) <= end_year):
+    if (2009 <= int(book.year) <= 2012):
       filtered_bestsellers.append(book)
 
 print(f"bestsellers from 2009 to 2012 are: {filtered_bestsellers}")
@@ -38,3 +35,15 @@ for book in books:
 
 print(f"most expensive book is '{most_expensive_book.name}' with the price of £ {most_expensive_book.price}")
 
+
+# create a list with all books whose author has the first name George
+george_books = []
+
+for book in books:
+    author_name_parts = (book.author).split(" ")
+    first_name = author_name_parts[0]
+
+    if (first_name == "George"):
+      george_books.append(book.name)
+
+print(f"books whose author has the first name George: {george_books}")
