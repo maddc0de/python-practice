@@ -15,4 +15,7 @@ print(number_of_bestsellers_written)
 
   # create bar chart
 plt.bar(number_of_bestsellers_written.Author, number_of_bestsellers_written.Name, color="blue", width=0.4)
+plt.xlabel("Authors")
+plt.ylabel("Number of bestselling books")
+plt.title("My first bar chart created")
 plt.show()
