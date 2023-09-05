@@ -1,12 +1,12 @@
-# python practice
+# Python practice
+
+## practice_1 objective
+
+- Practice and reinforce fundamental Python programming concepts, including conditional statements, user input handling, and basic arithmetic operations.
 
 ## practice_2 objectives
 
-- Print the name of the person who has the highest salary at the company.
-- Print the combined years of experience of all employees at the company.
-- Some people don't have an email address - collect their details into a new list
-- Print which department costs more for the company - Product department salaries or Business
-department salaries?
+- Apply algorithmic problem-solving skills in Python.
 
 ## practice_3 objectives
 
