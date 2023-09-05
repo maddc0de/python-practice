@@ -12,4 +12,11 @@ with open("volkswagen_uk.csv", "r", encoding="utf-8") as csvfile:
         volkswagen = Vw(*row)
         volkswagens.append(volkswagen)
 
-print(volkswagens[0])
+# print most expensive Volkswagen car listed
+most_expensive_volkswagen = volkswagens[0]
+
+for vw in volkswagens:
+    if (int(vw.price) > int(most_expensive_volkswagen.price)):
+        most_expensive_volkswagen = vw
+
+print(f"most expensive VW car listed is {most_expensive_volkswagen}")
