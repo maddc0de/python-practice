@@ -12,5 +12,5 @@ number_of_books_by_genre = bestsellers.groupby("Genre")[["Name"]].count().reset_
 
 print(number_of_books_by_genre)
 
-plt.pie(number_of_books_by_genre.Name, labels=number_of_books_by_genre.Genre)
+plt.pie(number_of_books_by_genre.Name, labels=number_of_books_by_genre.Genre, autopct='%1.1f%%')
 plt.show()
