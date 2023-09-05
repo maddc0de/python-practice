@@ -32,6 +32,6 @@ for book in books:
 # create and write into a new file the modified_books information
 with open("bestsellers_with_british_price.csv", "w", encoding="utf-8", newline='') as british_csvfile:
     writer = csv.writer(british_csvfile, quoting=csv.QUOTE_ALL)
-
+    writer.writerow(Book("Name", "Author", "User Rating", "Reviews", "Price", "Year", "Genre"))
     for book in modified_books:
         writer.writerow(book)
