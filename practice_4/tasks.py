@@ -12,6 +12,7 @@ with open("volkswagen_uk.csv", "r", encoding="utf-8") as csvfile:
         volkswagen = Vw(*row)
         volkswagens.append(volkswagen)
 
+
 # print most expensive Volkswagen car listed
 most_expensive_volkswagen = volkswagens[0]
 
@@ -20,3 +21,14 @@ for vw in volkswagens:
         most_expensive_volkswagen = vw
 
 print(f"most expensive VW car listed is {most_expensive_volkswagen}")
+
+
+# print the average price of all VW Golf models
+all_golf_vw_prices = []
+
+for vw in volkswagens:
+    if (vw.model == "Golf"):
+        all_golf_vw_prices.append(int(vw.price))
+
+golf_average_price = sum(all_golf_vw_prices) / len(all_golf_vw_prices)
+print(round(golf_average_price, 2))
