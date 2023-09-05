@@ -24,11 +24,24 @@ print(f"most expensive VW car listed is {most_expensive_volkswagen}")
 
 
 # print the average price of all VW Golf models
-all_golf_vw_prices = []
+vw_golf_prices = []
 
 for vw in volkswagens:
     if (vw.model == "Golf"):
-        all_golf_vw_prices.append(int(vw.price))
+        vw_golf_prices.append(int(vw.price))
 
-golf_average_price = sum(all_golf_vw_prices) / len(all_golf_vw_prices)
-print(round(golf_average_price, 2))
+golf_average_price = sum(vw_golf_prices) / len(vw_golf_prices)
+
+print(f"average price of all VW Golf models is {round(golf_average_price, 2)}")
+
+
+# find average milage for VW Polo models registered in 2020
+vw_polo_2020_mileages = []
+
+for vw in volkswagens:
+    if (vw.model == "Polo" and vw.year == "2020"):
+        vw_polo_2020_mileages.append(int(vw.mileage))
+
+polo_average_mileage = sum(vw_polo_2020_mileages) / len(vw_polo_2020_mileages)
+
+print(f"average milage for VW Polo models registered in 2020 is {round(polo_average_mileage)}")
