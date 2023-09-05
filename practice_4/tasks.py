@@ -35,7 +35,7 @@ golf_average_price = sum(vw_golf_prices) / len(vw_golf_prices)
 print(f"average price of all VW Golf models is {round(golf_average_price, 2)}")
 
 
-# find average milage for VW Polo models registered in 2020
+# print average milage for VW Polo models registered in 2020
 vw_polo_2020_mileages = []
 
 for vw in volkswagens:
