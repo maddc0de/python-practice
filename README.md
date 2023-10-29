@@ -8,7 +8,7 @@
 
 - Apply algorithmic problem-solving skills in Python.
 
-## practice_3 objectives
+## practice_3 and practice_4 objectives
 
 - learn basic data analysis: analyse, clean and visualise data to draw conclusions
 - read from files and write to CSV files using Python
